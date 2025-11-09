@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login / Registreren</title>
+    <style>
+      body { font-family: Arial, sans-serif; background: #f5f5f5; text-align: center; margin-top: 100px; }
+      form { background: white; display: inline-block; padding: 20px; margin: 10px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+      input { display: block; margin: 10px auto; padding: 10px; width: 200px; border: 1px solid #ccc; border-radius: 5px; }
+      button { background: #333; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+    </style>
+  </head>
+  <body>
+    <h1>Welkom bij de Chat App met AI 🤖</h1>
+    <div>
+      <form method="POST" action="/login">
+        <h2>Inloggen</h2>
+        <input name="username" placeholder="Gebruikersnaam" required />
+        <input name="password" type="password" placeholder="Wachtwoord" required />
+        <button type="submit">Inloggen</button>
+      </form>
+      <form method="POST" action="/register">
+        <h2>Registreren</h2>
+        <input name="username" placeholder="Gebruikersnaam" required />
+        <input name="password" type="password" placeholder="Wachtwoord" required />
+        <button type="submit">Registreren</button>
+      </form>
+    </div>
+  </body>
+</html>
